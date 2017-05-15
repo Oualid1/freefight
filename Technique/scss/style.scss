@@ -1,0 +1,448 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Segoe UI Light, Sans-Serif;
+}
+ul {
+  list-style:none;
+  li {
+      display:inline-block;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+h1 {
+  font-size:40px;
+}
+.intro {
+  font-size:20px;
+}
+.in-the-middle {
+  max-width:955px;
+  margin:0 auto;
+  position:relative;
+}
+.container {
+  max-width:1200px;
+  margin:0 auto;
+}
+.header {
+  background:#107c10;
+  padding:0;
+  width:100%;
+  .logo {
+    width:32px;
+    height:32px;
+    float:left;
+    margin:1% 2%;
+    img {
+      width:100%;
+    }
+  }
+  .navigationElements {
+    margin:0 0 0 2em;
+    li {
+      margin:0;
+      padding: 1em 1em;
+      :hover {
+        background: #222222;
+        padding: 1.5em  0;
+      }
+      a {
+        color:white;
+        text-decoration:none;
+        font-family:Segoe UI;
+        font-size:0.8em;
+      }
+    }
+  }
+}
+.hero {
+  width:100%;
+  height:704px;
+  display:flex; background:url(http://compass.xbox.com/assets/bf/40/bf405567-648b-42cd-bc30-204a1eee2452.jpg?n=background-xbox-one-takeover-adrenalinejunkie-2135x785.jpg) top center;
+  background-size:cover;
+  margin:0;
+  .tv {
+    background:transparent;
+    padding:37px 0 0 0;
+    width:670px;
+    height:381px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    section {
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:37px;
+      left:0;
+    }
+    .hello {
+      background:#107c10;
+      color:white;
+      display:table;
+      .userpic {
+        position:absolute;
+        height:100%;
+        width:50%;
+        background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/60114/cat.jpg) center center;
+        background-size:cover;
+      }
+      .copy{
+        margin:0px;
+        padding:0 0 0 40%;
+        font-size:1.3em;
+        display:table-cell;
+        vertical-align:middle;
+        transition:1s;
+      }
+    }
+    .win8apps {
+      background:#222;
+      padding-top:2em;
+      padding-right:5em;
+      nav.top {
+        clear:both;
+        display:inline-block;
+        ul{
+        margin:0;
+        }
+        li {
+          width:auto;
+          color:#aaa;
+          background:transparent;
+          font-size:1em;
+          margin:0;
+          padding:0 1em 0 0;
+        }
+        .active, li:hover {
+          color:#fff;
+        }
+      }
+      ul {
+        width:100%;
+        height:100%;
+        position:relative;
+        .tile:hover {
+          transform:scale(1.06);
+          z-index:1;
+          position:relative;
+        }
+        .tile.tall:hover {
+          transform:scale(1);
+        }
+        li {
+          float:left;
+          margin:0.2%;
+          padding:0;
+          background: #127a12;
+          width:10%;
+          height:15%;
+          overflow:hidden;
+          color:white;
+          font-size:0.5em;
+          line-height: 1.5em;
+          position:relative;
+          transition:0.2s;
+          cursor:pointer;
+          .caption {
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:auto;
+            background: rgba(0,0,0,0.6);
+            padding:0.6em;
+            font-size:1.3em;
+            p{
+              margin:0;
+              padding:0;
+            }
+          }
+          img {
+            max-width:100%;
+          }
+          p {
+            margin-left:8%;
+          }
+        }
+        .small {
+          padding-top:0.6em;
+          box-sizing:border-box;
+          text-align:center;
+          p {
+            text-align:left;
+          }
+        }
+        .tall {
+          height:46.3%;
+          img {
+            width:120%;
+            max-width:120%;
+            margin-left:-10%;
+          }
+          .fa {
+            padding-right:0.5em;
+            font-size:inherit;
+            width:auto;
+          }
+          p:last-child {
+            position:absolute;
+            bottom:-5px;
+          }
+          span {
+            font-size:2em;
+          }
+
+        }
+        .hero {
+          width:41.2%;
+          height:30.5%;
+          background:url(http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/2/13/1360751662280/Fast--Furious-4-008.jpg) center;
+          background-size:cover;
+          .caption {
+            font-size:2em;
+          }
+        }
+        .new {
+          width:20.4%;
+          margin-left:4%;
+        }
+        .new.deadr {
+    background:url(http://static.trustedreviews.com/94/000028c39/1821/Dead-Rising-3.jpg) bottom right;
+          background-size:cover;
+        }
+        .new.kinect {
+    background:url(http://allthingsxbox.com/wp-content/uploads/2013/07/1370897700-kinect-sports-rivals.jpg) top right;
+          background-size:cover;
+        }
+        .new.deadmau {
+    background:url(http://stoneyroads.com/media/f0c27_1589806.jpg) top right;
+          background-size:cover;
+        }
+        .clear {
+          background:transparent;
+        }
+        .ie {
+          background:#1389da;
+        }
+        .skype {
+          background:#00ade1;
+        }
+        .disk {
+          background:#2e6011;
+        }
+        .car {
+          background: url(http://cheapbossattack.files.wordpress.com/2013/07/forza-5.jpg) top right;
+          background-size:cover;
+        }
+      }
+      .video {
+        position:absolute;
+        top:300px;
+        left:2.5em;
+        color:#aaa;
+        cursor:pointer;
+        transition:0.3s;
+        padding:0;
+        p{
+          padding:0;
+          margin:0;
+        }
+      }
+      .video:hover {
+        border-bottom:1px solid #fff;
+        color:#fff;
+      }
+    }
+  }
+}
+.col-1-2 {
+  width:49%;
+  display:inline-block;
+  vertical-align:top;
+  //float:left;
+  box-sizing:border-box;
+  padding: 0 5% 0 0;
+  img {
+    max-width:100%;
+  }
+}
+[class*="col-"]::after {
+  display:table;
+  content:'';
+  line-height:0;
+}
+[class*="line"] {
+  margin:0;
+  padding: 1em 0 4em;
+  a {
+    text-decoration:none;
+    font-size:1.2em;
+    font-family:Segoe UI;
+    color:#107C10;
+  }
+}
+.light-grey-line {
+  background:#f2f2f2;
+  img {
+    position:absolute;
+  }
+  img.base {
+    top:160px;
+    right:20px;
+    width:470px;
+  }
+  img.play {
+    width:180px;
+    right:30px;
+    top:130px;
+  }
+  img.top {
+    width:300px;
+    top:10px;
+    right:150px;
+  }
+}
+.green-line {
+  background:#107C10;
+  color:white;
+}
+.grey-line {
+  background:#222;
+  color:white;
+  padding: 0.5em 0;
+  ul {
+    padding:0.5em;
+    margin:0;
+  }
+  li {
+    padding: 0 1em 0 0;
+    font-family:Segoe UI;
+  }
+  span {
+    color: #5cc21f;
+  }
+}
+
+.icon {
+  fill:#fff;
+  display: inline-block;
+	width: 32px;
+	height: 32px;
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/60114/sprites.svg);
+}
+.icon-IE {
+  background-position:128px 0;
+}
+.icon-skype {
+  background-position:176px 0;
+}
+.icon-film {
+  background-position:320px 0;
+}
+.icon-screen {
+  background-position:272px 0;
+}
+.icon-insert-template {
+  background-position:224px 0;
+}
+
+.tv-fixed {
+  opacity:0;
+  width:580px;
+  max-width:100%;
+  height:28em;
+  padding:10px;
+  box-size:border-box;
+  .monitor {
+    width:100%;
+    background:#222;
+  }
+}
+.tv-fixed.active {
+  opacity:1;
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/60114/xbox-tv-transp.png) no-repeat;
+  background-size:contain;
+}
+.tv-fixed.screen_fixed {
+  position:fixed;
+  top:200px;
+  right:-webkit-calc(50% + 2.5em);
+  max-width:-webkit-calc(50% - 3.5em);
+}
+
+/* Animation */
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(15%);
+    transform: translateX(15%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(15%);
+    transform: translateX(15%);
+  }
+}
+
+.slideRight {
+  -webkit-animation-name: slideRight;
+  animation-name: slideRight;
+  -webkit-animation-duration:0.7s;
+  animation-duration:0.7s;
+}
+
+@-webkit-keyframes xboxFloat {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(0.5em);
+    transform: translateY(0.5em);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes xboxFloat {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(0.5em);
+    transform: translateY(0.5em);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.xboxFloat {
+  -webkit-animation-name: xboxFloat;
+  animation-name: xboxFloat;
+  animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+}
